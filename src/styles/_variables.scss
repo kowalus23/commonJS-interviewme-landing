@@ -1,0 +1,81 @@
+$primary-color: #19BB9C;
+$secondary-color: #303D4F;
+$tertiary-color: #FFFFFF;
+$text-contrast: #FFFFFF;
+
+@mixin flexible($display, $justify, $align, $direction, $wrap) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin widthAndHeight($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin cardColors {
+    &.card- {
+        &first {
+            .card-body {
+                background-color: rgb(191, 72, 93);
+
+                .img-wrapper {
+                    background-color: rgb(69, 178, 155);
+                }
+            }
+        }
+
+        &second {
+            .card-body {
+                background-color: rgb(31, 164, 181);
+
+                .img-wrapper {
+                    background-color: rgb(224, 91, 74);
+                }
+            }
+        }
+
+        &third {
+            .card-body {
+                background-color: rgb(19, 15, 14);
+
+                .img-wrapper {
+                    background-color: rgb(236, 240, 241);
+                }
+            }
+        }
+
+        &forth {
+            .card-body {
+                background-color: rgb(30, 131, 193);
+
+                .img-wrapper {
+                    background-color: rgb(225, 124, 62);
+                }
+            }
+        }
+
+        &fifth {
+            .card-body {
+                background-color: rgb(16, 55, 182);
+
+                .img-wrapper {
+                    background-color: rgb(238, 200, 73);
+                }
+            }
+        }
+
+        &sixth {
+            .card-body {
+                background-color: rgb(204, 178, 163);
+
+                .img-wrapper {
+                    background-color: rgb(51, 71, 92);
+                }
+            }
+        }
+    }
+}

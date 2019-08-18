@@ -3,131 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{projectName}}</title>
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" value="Webpack basic starter project">
-    <meta name="Description" content="A simple webpack starter project for your basic web development needs."/>
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Webpack basic starter project" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/" />
-    <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
-    <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
-    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="{{mobileHeaderColor}}">
-    <!-- Mobile header color Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="{{mobileHeaderColor}}">
-    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <title>commonJS-Interviewme-landing-page</title>
 </head>
 <body>
-<!-- DEMO Project page content STARTS -->
-<div class="video-background">
-    <div class="video-foreground">
-        <iframe
-            src="https://www.youtube.com/embed/iIEIjo4dvSs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=iIEIjo4dvSs"
-            frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-<div class="splash">
-    <div class="splash__content">
-        <div class="splash-title">
-            <a href="https://github.com/lifenautjoe/webpack-starter-basic" target="_blank"><img class="splash-title__img"
-                                                                   src="<%= require('./src/assets/logo-on-dark-bg.png') %>"
-                                                                   alt="webpack logo"></a>
+<section class="navigation">
+    <div class="container">
+        <div class="navigation__content">
+            <h2 class="navigation__content__title">START BOOTSTRAP</h2>
+            <ul class="navigation__content__sections">
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="navigation__content__menu">
+                <input type="checkbox" class="navigation__content__menu--toggle"/>
+                <div class="navigation__content__menu--hamburger">
+                    <div></div>
+                </div>
+                <div class="navigation__content__menu--overlay">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#portfolio">PORTFOLIO</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="splash-overview">
-            <h1 class="splash-overview__heading">I'm a simple webpack 4 starter project for your basic web development needs.
+    </div>
+</section>
+<section class="welcome">
+    <div class="container">
+        <div class="welcome__content">
+            <div class="welcome__content__avatar">
+                <img src="<%= require('./src/assets/placeholder.png') %>" alt="avatar"/>
+            </div>
+            <h1 class="welcome__content__title mob-center">
+                START BOOTSTRAP
             </h1>
-            <div class="splash-overview__star">
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/lifenautjoe/webpack-starter-basic" data-show-count="true"
-                   aria-label="Star lifenautjoe/webpack-starter-basic on GitHub">Star</a>
+            <div class="star-content">
+                <div class="star-content__star"></div>
             </div>
-            <div class="splash-overview__conclusion">
-                <strong> No <a href="https://pragprog.com/the-pragmatic-programmer/extracts/wizards">wizard code</a>,
-                    understandable, scalable.</strong>
-            </div>
-            <div class="splash-overview__details">
-                A <strong>minimal</strong> yet <strong>rich</strong> set of features to get you going.
-                <div class="splash-overview-plugins">
-                    <button id="plugins-trigger" class="splash-overview-plugins__trigger">
-                        Show features
-                    </button>
-                    <ul id="plugins" class="splash-overview-plugins__list">
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/babel/babel-loader">Use the latest JavaScript</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/sass-loader">Write styles in Sass</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/url-loader">Load and bundle your assets</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank"
-                               href="https://github.com/webpack/webpack-dev-server">Start a development server and preview your work</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/postcss/autoprefixer">Automatic css vendor prefixes</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/webpack-contrib/uglifyjs-webpack-plugin">Optimizes scripts for production</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/NMFR/optimize-css-assets-webpack-plugin">Optimizes styles for production</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://github.com/jantimon/favicons-webpack-plugin">Generates favicons</a>
-                        </li>
-                        <li class="splash-overview-plugins__item">
-                            <a target="_blank" href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">Adds mobile headers color</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="splash-overview-start">
-                <div class="splash-overview-start__command">
-                    git clone https://github.com/lifenautjoe/webpack-starter-basic PROJECT-NAME
-                </div>
-                <div class="splash-overview-start__command">
-                    cd PROJECT-NAME
-                </div>
-                <div class="splash-overview-start__command">
-                    npm install <span class="splash-overview-start__comment"># Install dependencies </span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run kickstart <span class="splash-overview-start__comment"># Configure your project</span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run start <span class="splash-overview-start__comment"># Start the development server</span>
-                </div>
-                <div class="splash-overview-start__command">
-                    npm run build <span class="splash-overview-start__comment"># Build for production</span>
-                </div>
-            </div>
-            <div class="splash-overview-issues">
-                <div>Have an issue or are in need of guidance?</div>
-                <strong>Open an issue <a
-                    href="https://github.com/lifenautjoe/webpack3-starter/issues">here</a>. </strong>
-            </div>
-            <div class="splash-overview-footer">
-                A project by <strong><a target="_blank" href="https://www.instagram.com/lifenautjoe">@lifenautjoe</a></strong>.
+            <div class="welcome__content__description mob-center">
+                <p>Web Developer - Graphic Artist - User Experience Designer</p>
             </div>
         </div>
     </div>
-</div>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+</section>
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="portfolio__content">
+            <h2 class="portfolio__content__title">PORTFOLIO</h2>
+            <div class="star-content">
+                <div class="star-content__star"></div>
+            </div>
+            <div class="portfolio__content__card-wrapper">
+                <a href="link" class="card-first">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="<%= require('./src/assets/forest.svg') %>" alt="title"/>
+                        </div>
+                    </div>
+                </a>
+                <a href="link" class="card-second">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="<%= require('./src/assets/cake.svg') %>" alt="title"/>
+                        </div>
+                    </div>
+                </a>
+                <a href="link" class="card-third">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="<%= require('./src/assets/tent.svg') %>" alt="title"/>
+                        </div>
+                    </div>
+                </a>
+                <a href="link" class="card-forth">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="<%= require('./src/assets/game-controller.svg') %>" alt="title"/>
+                        </div>
+                    </div>
+                </a>
+                <a href="link" class="card-fifth">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="<%= require('./src/assets/money-box.svg') %>" alt="title"/>
+                        </div>
+                    </div>
+                </a>
+                <a href="link" class="card-sixth">
+                    <div class="card-body">
+                        <div class="img-wrapper">
+                            <img src="<%= require('./src/assets/fishing-boat.svg') %>" alt="title"/>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="about">
+    <div class="container">
+        <div class="about__content">
+            <h2 class="about__content__title">
+                ABOUT
+            </h2>
+            <div class="star-content">
+                <div class="star-content__star"></div>
+            </div>
+            <div class="about__content__description">
+                <p class="mob-center">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML,
+                    CSS, and Javascript as well as optional LESS stylesheets for easy customization</p>
+                <p class="mob-center">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to
+                    share your projects, this template is the perfect starting point!</p>
+            </div>
+            <a class="about__content--button" href="file" download>
+                <i class="fas fa-download"></i> Download now!
+            </a>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact__content">
+            <h2 class="contact__content__title mob-center">CONTACT</h2>
+            <div class="star-content">
+                <div class="star-content__star"></div>
+            </div>
+            <form class="custom-form" action="/">
+                <div class="custom-form__content">
+                    <input name="name" type="text" placeholder="Name" required/>
+                    <input name="email" type="email" placeholder="Email Address" required/>
+                    <input name="phone" type="tel" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                           required/>
+                    <textarea name="message" placeholder="Message" rows={5}></textarea>
+                </div>
+                <input class="custom-from--button" type="submit" value="Send"/>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__content__item">
+                <h2>LOCATION</h2>
+                <p>2215 John Faniel Drive <br/> Clark, MO 65243</p>
+            </div>
+            <div class="footer__content__item">
+                <h2>AROUND THE WEB</h2>
+                <div class="icon-wrapper">
+                    <a href="/" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="/" class="icon">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="/" class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="/" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__content__item">
+                <h2>ABOUT FREELANCER</h2>
+                <p>Freelance is a free to use, open source <br/>
+                    Bootstrap theme created by <a class="item-span" href="https://nowhere.com">Start Bootstrap.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <small> Copyright &copy; Your Website 2018</small>
+    </div>
+</section>
 
-    gtag('config', 'UA-101423651-2');
-</script>
-<!-- DEMO Project page content ENDS -->
+<script src="https://kit.fontawesome.com/2bef083580.js"></script>
 </body>
 </html>
