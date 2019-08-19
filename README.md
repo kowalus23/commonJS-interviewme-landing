@@ -8,11 +8,10 @@ For better UX, its good to add:
 - if scroll to section, then menu FIXED? or at least an arrow to take you back to the TOP :)
 
 For better code is nice to think about:
-- definitely replace anchor #, with refs or sth, generally set more React like scroll
 - replace star with dashes by SVG, with CSS its xxxx times faster, but not that responsive ;)
 - a little better scss structure, but it's ultra small project
-- separate 'JSON' for smaller parts to use in every component for their needs
-- do something with FORM values that handle on submit, some DB, Firebase, netlify forms etc.
+- add js aka JSON to set texts and elements in DOM
+- expand FORM to make it workable.
 
 ## Available Scripts
 
